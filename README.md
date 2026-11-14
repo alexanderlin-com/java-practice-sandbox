@@ -1,133 +1,108 @@
-# CLI Expense Tracker
+# Java Practice Sandbox
 
-Build a command-line Java application for tracking personal expenses.
+A general-purpose repository for small Java experiments.
 
-The purpose of this project is not to follow a provided architecture or copy a finished implementation. The goal is to practice turning requirements into smaller responsibilities, methods, classes, and implementation steps.
+The purpose of this repository is to build fluency with Java by writing many small, isolated programs rather than one large application.
 
-You should decide the structure of the program yourself.
+This is a learning sandbox, not a production project.
 
----
+## Goals
 
-## Version 1 Requirements
+Use this repository to practice:
 
-The user must be able to:
+- Java syntax
+- Classes and objects
+- Methods
+- Constructors
+- Packages
+- Access modifiers
+- Inheritance
+- Interfaces
+- Abstract classes
+- Records
+- Enums
+- Collections
+- Generics
+- Exceptions
+- Lambdas
+- Streams
+- File I/O
+- Date and time APIs
+- Concurrency
+- Other Java concepts encountered during work or study
 
-- Record an expense
-- View all recorded expenses
-- View their total spending
-- Exit the program
+Each experiment should be small enough to understand independently.
 
-Expenses only need to exist while the program is running. Closing the program may erase all data.
+## General Rule
 
-Each expense should contain:
+When encountering an unfamiliar Java concept:
 
-- An amount
-- A category
-- A description
-- A date
+1. Identify exactly what is unfamiliar.
+2. Create the smallest possible experiment that demonstrates it.
+3. Compile and run it.
+4. Change something.
+5. Observe what breaks or changes.
+6. Repeat until the behavior makes sense.
 
-The program should repeatedly present the user with available actions until they choose to exit.
+Prefer experiments over passive reading.
 
-Invalid input should not normally crash the program. Handle obvious user mistakes reasonably.
+## Structure
 
----
+Experiments may be organized into packages by topic or question.
 
-## Version 2 Requirements
+Examples:
 
-Add the ability to:
+```text
+sandbox.collections
+sandbox.records
+sandbox.generics
+sandbox.exceptions
+sandbox.concurrency
+```
 
-- Delete an expense
-- Filter expenses by category
-- View spending totals for a specific category
+Package names should describe what is being explored.
 
-Categories should come from a defined set rather than arbitrary free-form strings.
+Avoid dumping unrelated experiments into generic packages such as `misc`, `temp`, or `test`.
 
----
+## Tooling
 
-## Version 3 Requirements
+Primary environment:
 
-Add persistence.
+- Java
+- `javac`
+- `java`
+- VS Code
+- Git
 
-When the program closes, expenses should be saved to disk.
+Build tools and frameworks may be added later when there is a reason to learn them.
 
-When the program starts again, previously saved expenses should be restored automatically.
+For now, the focus is Java itself.
 
-Use a simple text-based file format. Do not use a database or external serialization library for this version.
+## Learning Rule
 
----
+AI may be used as a tutor.
 
-## Version 4 Requirements
-
-Add automated tests for the important program behavior.
-
-Tests should focus on application logic rather than console output.
-
-At minimum, verify behavior involving:
-
-- Recording expenses
-- Deleting expenses
-- Calculating total spending
-- Filtering by category
-- Invalid or edge-case inputs
-
----
-
-## Constraints
-
-Do not use Spring.
-
-Do not use a database.
-
-Do not use AI to generate the project's architecture, classes, methods, or finished implementations.
-
-AI may be used to:
+AI may:
 
 - Explain Java concepts
+- Explain APIs
 - Explain compiler errors
-- Explain APIs or standard-library features
-- Review code you already wrote
-- Point out design problems
-- Ask questions that help you reason through a problem
-- Give progressively stronger hints after you have attempted a solution
+- Explain runtime errors
+- Review code
+- Ask guiding questions
+- Point out mistakes
+- Suggest topics to investigate
 
-The main program entry point should not contain the entire application.
+AI should not automatically implement exercises or solve the interesting part of the experiment.
 
-Prefer small responsibilities over one giant method.
+The goal is to understand why the code works, not merely produce working code.
 
-Do not create abstractions merely because they sound professional. Add structure when the requirements give you a reason for it.
+## Philosophy
 
----
+Large systems are made from small pieces.
 
-## Definition of Done
+If something looks intimidating, reduce it until the next step is concrete.
 
-The final program should be usable entirely from the command line.
+You can literally do beegles.
 
-A user should be able to start the application, manage expenses, exit, restart the application, and continue working with previously saved data.
-
-The application should have automated tests covering its important business logic.
-
-The code should be organized well enough that adding a new requirement does not require rewriting the entire program.
-
----
-
-## Development Rule
-
-Before implementing a feature, break it down until each remaining task is concrete enough that you understand what code you are trying to write.
-
-Do not begin with:
-
-> "How do I build an expense tracker?"
-
-Keep decomposing until the questions become things like:
-
-> "How do I store this information?"
-
-> "How do I find one item?"
-
-> "How do I calculate this value?"
-
-> "How do I validate this input?"
-
-> "Which part of the program should be responsible for this behavior?"
-
-When the next step becomes boring and specific, implement it.
+Just `printf`.
