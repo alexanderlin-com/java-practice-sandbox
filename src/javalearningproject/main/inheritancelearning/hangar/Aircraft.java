@@ -39,5 +39,5 @@ public class Aircraft {
 
 
     public int totalSorties;
-    public static String iff;
+    public String iff;
 }

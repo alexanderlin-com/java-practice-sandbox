@@ -30,7 +30,7 @@ public boolean canContinue() {
     return (!winchester() && !bingoFuel());
 }
 
-public static boolean iff;
+public boolean iff;
 
 
 }

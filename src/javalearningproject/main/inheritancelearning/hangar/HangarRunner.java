@@ -3,7 +3,7 @@ package javalearningproject.main.inheritancelearning.hangar;
 import javalearningproject.main.inheritancelearning.hangar.Aircraft;
 import javalearningproject.main.inheritancelearning.hangar.StrikeEagle;
 
-public class Main {
+public class HangarRunner {
 
     public static void main(String[] args) {
 
