@@ -2,8 +2,8 @@ package javalearningproject.main.inheritancelearning.hangar;
 
 public class StrikeEagle extends Aircraft {
 
-    int amraam = 4;
-    int sidewinder = 4;
+    int amraams = 4;
+    int sidewinders = 4;
     public String WSOName;
     boolean masterArm;
 
@@ -23,14 +23,14 @@ public class StrikeEagle extends Aircraft {
         masterArm = false;
     }
     public boolean winchester() {
-        return (amraam == 0 && sidewinder == 0);
+        return (amraams == 0 && sidewinders == 0);
     }
 
-public boolean canContinue() {
-    return (!winchester() && !bingoFuel());
-}
+    public boolean canContinue() {
+        return (!winchester() && !bingoFuel());
+    }
 
-public boolean iff;
+    public boolean iff;
 
 
 }
