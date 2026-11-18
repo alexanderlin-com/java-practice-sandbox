@@ -1,4 +1,4 @@
-package javalearningproject.main.inheritancelearning.test;
+package sandbox.constructordispatch;
 
 
 public class Parent {

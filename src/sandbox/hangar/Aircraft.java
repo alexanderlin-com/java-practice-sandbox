@@ -1,4 +1,4 @@
-package javalearningproject.main.inheritancelearning.hangar;
+package sandbox.hangar;
 
 
 public class Aircraft {
